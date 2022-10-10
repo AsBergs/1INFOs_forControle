@@ -2,15 +2,24 @@
 <script>
     /*
     PROBLEMA
-    Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
+    Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. 
+    Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
     */
 
     //ENTRADA
-
-
+let habitantes = 50000
+let emCincoAnos = 0
+let emDezAnos = 0
     //PROCESSAMENTO
+for(let contador = 1; contador <= 5; contador++){
+    emCincoAnos = (habitantes / 100) * 1,5;
+    
+}
+for(contador = 1; contador <= 10; contador++){
+        emDezAnos = (habitantes / 100) * 1,5;
+    }
 
 
     //SAÍDA
-
+document.write(`População em 5 anos: ${emCincoAnos} </br> Em 10 anos: ${emDezAnos}`)
 </script>

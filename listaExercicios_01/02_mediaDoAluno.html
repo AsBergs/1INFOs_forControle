@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
+const qtdNotasAluno = Number(prompt("Quantas notas o aluno obteve?: "));
+let soma = 0;
 
     //PROCESSAMENTO
-
-
+for(let contador = 1; contador <= qtdNotasAluno; contador++){
+    const notasAlunos = parseInt(prompt("Quais foram as notas?: "));
+    soma = soma + notasAlunos;
+}
+const notaFinal = soma / qtdNotasAluno;
     //SAÍDA
-
+document.write(`A média de notas desse aluno é: ${notaFinal}`)
 </script>
