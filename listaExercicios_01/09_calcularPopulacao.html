@@ -11,13 +11,16 @@ let habitantes = 50000
 let emCincoAnos = 0
 let emDezAnos = 0
     //PROCESSAMENTO
-for(let contador = 1; contador <= 5; contador++){
-    emCincoAnos = (habitantes / 100) * 1,5;
+for(let contador = 1; contador <= 10; contador++){
+    if(contador === 5){
+    habitantes = habitantes + (habitantes / 100) * (5 * 1,5);
+    }
+    else if(contador === 10){
+        emDezAnos = habitantes + (habitantes / 100) * (10 * 1,5);
+    }
     
 }
-for(contador = 1; contador <= 10; contador++){
-        emDezAnos = (habitantes / 100) * 1,5;
-    }
+
 
 
     //SAÍDA

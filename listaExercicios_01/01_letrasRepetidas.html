@@ -10,12 +10,16 @@
     */
 
     //ENTRADA
-    let listaDeNumeros = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-    
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let listaNova = [];
 
     //PROCESSAMENTO
-
-
+for(let numero = 0; numero <= listaDeLetras.length - 1; numero++){
+    if(listaNova.indexOf(listaDeLetras[numero].toLowerCase())=== -1){
+        listaNova.push(listaDeLetras[numero].toLowerCase());
+    }
+}
+document.write(`Lista antiga; ${listaDeLetras.join(", ")} </br> Lista nova: ${listaNova.join(", ")}`)
     //SAÍDA
 
 </script>

@@ -7,11 +7,19 @@
     */
 
     //ENTRADA
-
-
+let numeros = [];
+let maior = 0
     //PROCESSAMENTO
-
+for(let contador = 1;  contador <= 5; contador++){
+    const infNumeros = Number(prompt("Informe um número: "));
+    numeros.push(infNumeros);
+    for(let numero = 1; numero <= numeros.length; numero++){
+        if(numeros[numero] >= maior){
+            maior = numeros[numero];
+        }
+    }
+} 
 
     //SAÍDA
-
+document.write(`O maior número dos números informados(${numeros.join(", ")}) é: ${maior}`)
 </script>

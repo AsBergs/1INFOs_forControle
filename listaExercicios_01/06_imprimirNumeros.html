@@ -8,10 +8,21 @@
     */
 
     //ENTRADA
+const numeroInicial = Number(prompt("Informe o número inicial"));
+const numeroFinal = Number(prompt("Informe um número final"));
+let numerosImpar = [];
+let numerosPar = [];
 
 
     //PROCESSAMENTO
+if(numeroInicial < numeroFinal)
+    for(let numero = numeroInicial; numero <= numeroFinal; numero++){
+       (numero % 2 === 0 ) ? numerosPar.push(numero)
+       : numerosImpar.push(numero)
 
+    }else alert(`O numero inicial tem que ser menor que o numero final`)
+
+document.write(`Os numeros pares do ${numeroFinal} a ${numeroInicial} são: ${numerosPar} </br> Os impares: ${numerosImpar}`)
 
     //SAÍDA
 
