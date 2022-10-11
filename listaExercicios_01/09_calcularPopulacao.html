@@ -13,11 +13,12 @@ let emDezAnos = 0;
 let taxa = 1.5;
     //PROCESSAMENTO
 for(let contador = 1; contador <= 10; contador++){
+    habitantes =  habitantes + (habitantes  * taxa /100);
     if(contador === 5){
-    emCincoAnos = habitantes + (habitantes / 100 * (5 * taxa));
+        emCincoAnos = parseInt (habitantes);
     }
-    else if(contador === 10){
-        emDezAnos = habitantes + (habitantes / 100 * (10 * taxa));
+    if(contador === 10){
+        emDezAnos = parseInt(habitantes);
     }
     
 }
