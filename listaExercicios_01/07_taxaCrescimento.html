@@ -7,8 +7,14 @@
     */
 
     //ENTRADA
-    let população = 80000;
+let população = 80000;
+let novaPopulação = 200000;
+let taxaCres = 3;
 
+for(var contador = -1; população <= novaPopulação; contador++ ){
+    população =  população + (população*(taxaCres/100)) ;
+}
+document.write(`Precisaram ${contador} anos para atingir a população de ${novaPopulação}`)
 
 
 
