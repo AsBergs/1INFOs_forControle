@@ -19,20 +19,23 @@ let votos2 = 0;
 let votos3 = 0;
 
     //SAÍDA
-for(var contador = 1; contador <= alunosVotantes; contador++){
-  const votação = Number(prompt(`Em quem você vota? ( 1 = ${nome1} / 2 = ${nome2} /3 = ${nome3}): `))
+for(let contador = 1; contador <= alunosVotantes; contador++){
+  const votação = Number(prompt(`Em quem você vota? ( 1 = ${nome1} / 2 = ${nome2} / 3 =${nome3}): `))
   if(votação === 1){
-    votos1 = votos1 ++;    
+    votos1 = votos1 + 1;  
+      
   }else if(votação === 2){
-    votos2 = votos2 ++;
+    votos2 = votos2 + 1;
+    
    }else if(votação === 3){
-    votos3 = votos3 ++;
+    votos3 = votos3 + 1;
+    
   }
 }
-let pc1 = (votos1 * 100) / contador;
-const porcentagem1 = alunosVotantes * votos1;
-const porcentagem2 = alunosVotantes * votos2;
-const porcentagem3 = alunosVotantes * votos3;
-document.write(`O canditado(a) ${nome1} teve: ${pc1} votos </br> O canditato(a) ${nome2} teve: ${votos2} votos (${porcentagem2}% dos votos ) 
+
+const porcentagem1 = (votos1 * 100) / alunosVotantes;
+const porcentagem2 = (votos2 * 100) / alunosVotantes;
+const porcentagem3 = (votos3 * 100 ) / alunosVotantes;
+document.write(`O canditado(a) ${nome1} teve: ${votos1} votos (${porcentagem1}% dos votos) </br> O canditato(a) ${nome2} teve: ${votos2} votos (${porcentagem2}% dos votos ) 
 </br> O canditato(a) ${nome3} teve: ${votos3} votos (${porcentagem3}% dos votos )`)
 </script>
